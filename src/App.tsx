@@ -14,7 +14,7 @@ const App = () => {
     // currentMonth,
     income,
     expense,
-    handleMonthChange,
+    // handleMonthChange,
     handleAddItem,
   } = useExpense();
 
