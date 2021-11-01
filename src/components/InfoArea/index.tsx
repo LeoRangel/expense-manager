@@ -16,7 +16,7 @@ export const InfoArea = ({ income, expense }: Props) => {
                 <ResumeItem
                     title="Balance"
                     value={income - expense}
-                    color={(income - expense) < 0 ? 'red' : 'green'}
+                    color={(income - expense) < 0 ? '#FF0A43' : '#0EAA4A'}
                 />
             </C.ResumeArea>
         </C.Container>

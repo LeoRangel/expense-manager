@@ -35,14 +35,12 @@ export const Button = styled.button`
     width: 100%;
     height: 30px;
     padding: 0 5px;
-    border: 1px solid lightblue;
+    border: 1px solid rgba(0,0,0,.1);
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: rgba(0,0,0,.1);
     color: black;
     cursor: pointer;
 
     &:hover {
-        background-color: blue;
-        color: white;
     }
 `;
