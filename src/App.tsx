@@ -5,6 +5,7 @@ import { InfoArea } from './components/InfoArea';
 import { InputArea } from './components/InputArea';
 import { useExpense } from './hooks/useExpense';
 import { ExpenseHeader } from './components/ExpenseHeader';
+import { Navbar } from './components/Navbar';
 
 const App = () => {
 
@@ -20,6 +21,8 @@ const App = () => {
 
   return (
     <C.Container>
+      <Navbar />
+
       <ExpenseHeader
         income={income}
         expense={expense}
