@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyle } from './components/GlobalStyle';
+import { ExpenseContextProvider } from './contexts/ExpenseContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <ExpenseContextProvider>
+      <App />
+    </ExpenseContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
