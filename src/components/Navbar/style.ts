@@ -26,8 +26,12 @@ export const UserProfile = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     margin-left: 10px;
+    padding: 3px 10px 3px 3px;
+    border-radius: 100px;
     display: flex;
     align-items: center;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px #CCC;
 `;
 
 export const UserImg = styled.img`
@@ -38,7 +42,7 @@ export const UserImg = styled.img`
 `;
 
 export const UserName = styled.span`
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
     margin-left: 10px;
 `;
