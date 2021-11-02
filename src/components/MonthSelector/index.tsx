@@ -1,8 +1,7 @@
 import { formatCurrentMonth } from '../../helpers/dateFilter';
 import { useExpense } from '../../hooks/useExpense';
 import * as C from './style';
-import { ReactComponent as ArrowBackIcon } from '../../assets/images/arrow_back.svg';
-import { ReactComponent as ArrowForwardIcon } from '../../assets/images/arrow_forward.svg';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 type MonthSelectorProps = {
     textColor?: string;
@@ -30,18 +29,16 @@ export const MonthSelector = ({ textColor, fontSize }: MonthSelectorProps) => {
     return (
         <C.MonthSelector textColor={textColor} fontSize={fontSize}>
             <C.MonthSelectorArrow onClick={handlePrevMonth}>
-                <ArrowBackIcon
-                    fill={textColor}
-                    width={fontSize}
-                    height={fontSize}
+                <FaChevronLeft
+                    color={textColor}
+                    size={fontSize}
                 />
             </C.MonthSelectorArrow>
             <C.MonthSelectorTitle>{formatCurrentMonth(currentMonth)}</C.MonthSelectorTitle>
             <C.MonthSelectorArrow onClick={handleNextMonth}>
-                <ArrowForwardIcon
-                    fill={textColor}
-                    width={fontSize}
-                    height={fontSize}
+                <FaChevronRight
+                    color={textColor}
+                    size={fontSize}
                 />
             </C.MonthSelectorArrow>
         </C.MonthSelector>

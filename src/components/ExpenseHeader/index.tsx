@@ -1,6 +1,6 @@
 import * as C from './style';
-import { ReactComponent as CalendarIcon } from '../../assets/images/calendar.svg';
 import { MonthSelector } from '../MonthSelector';
+import { FaCalendarAlt } from "react-icons/fa";
 
 type ExpenseHeaderProps = {
     income: number;
@@ -13,10 +13,9 @@ export const ExpenseHeader = ({ income, expense }: ExpenseHeaderProps) => {
         <C.ExpenseHeader
             color={(income - expense) < 0 ? '#FF0A43' : '#0EAA4A'}
         >
-            <CalendarIcon
-                fill="#ffffff"
-                width="50px"
-                height="50px"
+            <FaCalendarAlt
+                size="40px"
+                color="white"
                 style={{ marginBottom: '20px' }}
             />
 
