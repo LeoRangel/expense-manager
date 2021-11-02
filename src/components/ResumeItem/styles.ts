@@ -5,14 +5,23 @@ export const Container = styled.div`
     background-color: #FFF;
     box-shadow: 0px 0px 5px #CCC;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 `;
 
 export const Title = styled.div`
-    text-align: center;
     font-weight: bold;
-    color: #888;
+    color: rgba(0,0,0,.5);
+    // font-size: .9rem;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: baseline;
+`;
+
+export const ResumeIcon = styled.div`
+    margin-top: 2px;
+    margin-left: 5px;
 `;
 
 export const Info = styled.div<{ color?: string }>`

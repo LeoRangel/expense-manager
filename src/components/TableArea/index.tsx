@@ -9,14 +9,6 @@ type Props = {
 export const TableArea = ({ list }: Props) => {
     return (
         <C.Table>
-            <thead>
-                <tr>
-                    <C.TableHeadColumn width={100}>Date</C.TableHeadColumn>
-                    <C.TableHeadColumn width={130}>Category</C.TableHeadColumn>
-                    <C.TableHeadColumn>Tittle</C.TableHeadColumn>
-                    <C.TableHeadColumn width={150}>Value</C.TableHeadColumn>
-                </tr>
-            </thead>
             <tbody>
                 {list.map((item, index) => (
                     <TableItem key={index} item={item} />
